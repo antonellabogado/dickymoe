@@ -39,7 +39,7 @@ a {
 }
 
 .sombra {
-    box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.92), -10px -10px 0px 1px rgb(99, 19, 102);;
+    box-shadow: 10px 10px 0px 1px rgba(0,0,0,0.92), -10px -10px 0px 1px rgb(99, 19, 102);
 }
 
 /* Grids Index */
@@ -75,6 +75,11 @@ a {
 .logo {
     max-width: 100%;
     padding-top: 30px;
+    transition: all 5s;
+}
+
+.logo:hover {
+    width: 105px;
 }
 
 .header ul li a {
@@ -95,6 +100,21 @@ a {
     background-size: cover;
     background-position: center;
     background-position: fixed;
+}
+
+.tituloAnimado {
+    animation-name: texto;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+@keyframes texto {
+    from {
+        transform: translateX(1300px);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .titulo h1 {
@@ -144,6 +164,7 @@ a {
 
 .estilosFlex div {
     width: 400px;
+    height: 250px;
     background-color: rgb(165, 165, 165);
     margin: 20px auto;
     padding-left: 25px;
@@ -151,7 +172,7 @@ a {
 }
 
 .estilosFlex div h2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .estilosFlex div ul {
@@ -178,6 +199,12 @@ a {
     height: 350px;
     background-position: center;
     background-size: cover;
+    transition: all 1s;
+}
+
+.galeriaTatuajes div:hover, .galeriaBarberia div:hover {
+    width: 370px;
+    height: auto;
 }
 
 .tattooUno {
