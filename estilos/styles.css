@@ -79,6 +79,25 @@ a {
     padding-bottom: 75px;
 }
 
+.seccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tattoo {
+    align-items: flex-start;
+}
+
+.barber {
+    align-items: flex-end;
+}
+
+.h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
 /* Tatuajes y Barbería */
 .galeria, .seccion-sobreMi ,.seccion-contacto {
     padding-top: 100px;
@@ -216,19 +235,22 @@ a {
     text-align: center;
 }
 
+.seccion-contacto p {
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+}
+
 .form {
-    width: 60%;
-    margin: 2rem 20%;
+    margin: 2rem;
+    height: 450px;
 }
 
-input, select, textarea {
-    padding: 10px 0px;
-    border-radius: 10px;
-    border-color: rgba(0, 0, 0, 0.5)
+input, select, textarea, button {
+    margin-bottom: 10px;
 }
 
-.enviar {
-    width: 100px;
+.form .btn {
+    border-color: rgb(99, 19, 102);
 }
 
 /* FOOTER */
@@ -332,6 +354,10 @@ hr {
 
     .mobile {
         display: block;
+    }
+
+    .margin-top {
+        margin-top: 15px;
     }
 
     .ocultar {
