@@ -1,0 +1,11 @@
+.sobreMi p, .seccion-contacto p {
+    color: $negro;
+    font-size: 1.3rem;
+}
+
+.form {
+    height: 450px;
+    .btn {
+        border-color: $violeta;
+    }
+}

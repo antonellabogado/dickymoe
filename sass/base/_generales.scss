@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+h1, a {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#inicio {
+    height: 35rem;
+}
+
+#secciones {
+    height: 25rem;
+}
+
+#inicio, #secciones {
+    background-image: url(../imagenes/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn {
+    background-color: $blanco;
+    color: $violeta;
+    border-radius: 15px;
+    &:hover {
+        color: $blanco;
+        background-color: $violeta;
+    }
+}

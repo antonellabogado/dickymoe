@@ -1,0 +1,54 @@
+@media (max-width: 1199.98px) {
+
+    /* Galería */
+    .galeria {
+        justify-content: space-evenly!important;
+    }
+
+    .sobreMi {
+        margin-bottom: 80px;
+    }
+
+    /* Contacto */
+    iframe {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer{
+        section {
+            margin-bottom: 50px;
+        }
+    }
+
+}
+@media (max-width: 767.98px) {
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $negro;
+        .sub-nav {
+            width: 100%;
+            .mobile {
+                display: block;
+            }
+            .margin-top {
+                margin-top: 20px;
+            }
+            .ocultar-mobile {
+                display: none;
+            }
+        }
+    }
+
+    .header {
+        padding-top: 100px;
+    }
+
+    /* Galería */
+    .galeria {
+        justify-content: center!important;
+    }
+}

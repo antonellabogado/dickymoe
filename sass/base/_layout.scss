@@ -1,0 +1,66 @@
+/* NAV */
+
+.navbar {
+    background-color: transparent;
+.sub-nav{
+    width: auto;
+    .mobile {
+        display: none;
+    }
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+    .margin-top {
+        margin-top: 28px;
+    }
+    .nav-link {
+        font-size: 1.1rem;
+        &:hover {
+            color: $violeta;
+        }
+    }
+}
+}
+
+/* HEADER */
+.header {
+    height: 100%;
+    padding-bottom: 100px;
+    h1 {
+        color: $blanco;
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    h3 {
+        color: $violeta;
+        animation: fadeInLeft;
+        animation-duration: 2s;
+    }
+}
+
+/* FOOTER */
+.footer {
+    section {
+        color: $blanco;
+        h4 {
+            font-size: 1.25rem;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    ul {
+        a {
+            color: $blanco;
+            &:hover {
+                color: $violeta;
+            }
+        }
+        .rrss {
+            width: 25px;
+        }
+    }
+
+}
+

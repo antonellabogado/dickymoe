@@ -1,0 +1,271 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+h1, a {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#inicio {
+  height: 35rem;
+}
+
+#secciones {
+  height: 25rem;
+}
+
+#inicio, #secciones {
+  background-image: url(../imagenes/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(99, 19, 102);
+  border-radius: 15px;
+}
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(99, 19, 102);
+}
+
+/* NAV */
+.navbar {
+  background-color: transparent;
+}
+.navbar .sub-nav {
+  width: auto;
+}
+.navbar .sub-nav .mobile {
+  display: none;
+}
+.navbar .sub-nav .logo {
+  width: 100px;
+  height: auto;
+}
+.navbar .sub-nav .margin-top {
+  margin-top: 28px;
+}
+.navbar .sub-nav .nav-link {
+  font-size: 1.1rem;
+}
+.navbar .sub-nav .nav-link:hover {
+  color: rgb(99, 19, 102);
+}
+
+/* HEADER */
+.header {
+  height: 100%;
+  padding-bottom: 100px;
+}
+.header h1 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.header h3 {
+  color: rgb(99, 19, 102);
+  animation: fadeInLeft;
+  animation-duration: 2s;
+}
+
+/* FOOTER */
+.footer section {
+  color: rgb(255, 255, 255);
+}
+.footer section h4 {
+  font-size: 1.25rem;
+}
+.footer section p {
+  margin: 0;
+}
+.footer ul a {
+  color: rgb(255, 255, 255);
+}
+.footer ul a:hover {
+  color: rgb(99, 19, 102);
+}
+.footer ul .rrss {
+  width: 25px;
+}
+
+.galeria div {
+  width: 350px;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+.galeria div:hover {
+  border: 5px solid rgb(255, 255, 255);
+}
+
+/* Barbería */
+.barberia-1 {
+  background-image: url(../imagenes/barberia1.jpg);
+}
+
+.barberia-2 {
+  background-image: url(../imagenes/barberia2.jpg);
+}
+
+.barberia-3 {
+  background-image: url(../imagenes/barberia3.jpg);
+}
+
+.barberia-4 {
+  background-image: url(../imagenes/barberia4.jpg);
+}
+
+.barberia-5 {
+  background-image: url(../imagenes/barberia5.jpg);
+}
+
+.barberia-6 {
+  background-image: url(../imagenes/barberia6.jpg);
+}
+
+.barberia-7 {
+  background-image: url(../imagenes/barberia7.jpg);
+}
+
+.barberia-8 {
+  background-image: url(../imagenes/barberia8.jpg);
+}
+
+.barberia-9 {
+  background-image: url(../imagenes/barberia9.jpg);
+}
+
+.barberia-10 {
+  background-image: url(../imagenes/barberia10.jpg);
+}
+
+.barberia-11 {
+  background-image: url(../imagenes/barberia11.jpg);
+}
+
+.barberia-12 {
+  background-image: url(../imagenes/barberia12.jpg);
+}
+
+/* Tatuajes */
+.tatuajes-1 {
+  background-image: url(../imagenes/tattoo1.png);
+}
+
+.tatuajes-2 {
+  background-image: url(../imagenes/tattoo2.png);
+}
+
+.tatuajes-3 {
+  background-image: url(../imagenes/tattoo3.png);
+}
+
+.tatuajes-4 {
+  background-image: url(../imagenes/tattoo4.png);
+}
+
+.tatuajes-5 {
+  background-image: url(../imagenes/tattoo5.png);
+}
+
+.tatuajes-6 {
+  background-image: url(../imagenes/tattoo6.png);
+}
+
+.tatuajes-7 {
+  background-image: url(../imagenes/tattoo7.png);
+}
+
+.tatuajes-8 {
+  background-image: url(../imagenes/tattoo8.png);
+}
+
+.tatuajes-9 {
+  background-image: url(../imagenes/tattoo9.png);
+}
+
+.tatuajes-10 {
+  background-image: url(../imagenes/tattoo10.png);
+}
+
+.tatuajes-11 {
+  background-image: url(../imagenes/tattoo11.png);
+}
+
+.tatuajes-12 {
+  background-image: url(../imagenes/tattoo12.png);
+}
+
+.sobreMi p, .seccion-contacto p {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}
+
+.form {
+  height: 450px;
+}
+.form .btn {
+  border-color: rgb(99, 19, 102);
+}
+
+@media (max-width: 1199.98px) {
+  /* Galería */
+  .galeria {
+    justify-content: space-evenly !important;
+  }
+  .sobreMi {
+    margin-bottom: 80px;
+  }
+  /* Contacto */
+  iframe {
+    width: 100%;
+  }
+  /* FOOTER */
+  .footer section {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+  }
+  .navbar .sub-nav {
+    width: 100%;
+  }
+  .navbar .sub-nav .mobile {
+    display: block;
+  }
+  .navbar .sub-nav .margin-top {
+    margin-top: 20px;
+  }
+  .navbar .sub-nav .ocultar-mobile {
+    display: none;
+  }
+  .header {
+    padding-top: 100px;
+  }
+  /* Galería */
+  .galeria {
+    justify-content: center !important;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

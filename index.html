@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
     <!-- ANIMATE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -28,7 +28,7 @@
     <div id="inicio">
 
         <!-- NAV -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container-fluid sub-nav">
 
                 <a class="navbar-brand mobile" href="#"><img class="logo" src="imagenes/logo.png" alt="Logo Dicky Moe Estudio"></a>
@@ -58,82 +58,36 @@
     </div>
 
    <!-- CONTENIDO -->
-    <div class="row row-cols-1 row-cols-md-2 gy-5 py-5 container-fluid">
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-md-2 gy-5 py-5">
+            <section class="imgInicio2">
+                <img src="imagenes/img2.jpg" class="img-fluid" alt="Maquina de Tatuajes">
+            </section>
 
-        <section class="imgInicio2">
-            <img src="imagenes/img2.jpg" class="img-fluid" alt="Maquina de Tatuajes">
-        </section>
+            <section class="text-start">
+                <h2 class="h1 fw-bold">TATUAJES</h2>
+                <h2>Estilo EEUU</h2>
+                <p>El tattoo tradicional se caracteriza por algunos detalles básicos: Lineas gruesas, firmes y sin modulación. Con colores primarios sólidos, rojos, amarillos, verdes, azules y mucho negro. Diseños simples o de gran abstracción que dentro de los mismos tienen una complejidad absoluta, de composición equilibrada y detallada pero no excesiva, no hay detalles realistas ya que siempre responde a las reglas básicas de luz y sombra.</p>
+               <h2>Estilo Japonés</h2>
+               <p>El tatuaje japonés se caracteriza por un diseño fuerte y rudo aunque las figuras encierran un estilo grácil y delicado. Además, una de las señas de identidad es el horror vacui que cubre toda la piel. Las composiciones suelen estar formadas por una o varias figuras principales de mayor tamaño que ocupan los espacios centrales y para rellenar el espacio vacío se utilizan nubes, corrientes de agua, remolinos de viento, flores, pétalos, hojas de arce, etc.</p>
+            </section>
+        </div>    
+        
+        <div class="row row-cols-1 row-cols-md-2 gy-5 py-5">
+            <section class="text-end">
+                <h2 class="h1 fw-bold">BARBER SHOP</h2>
+                <h2>Cortes de pelo</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde numquam nisi, rerum debitis libero esse, illum molestiae asperiores nobis quod optio. Atque aperiam numquam mollitia iure molestias vitae quod dignissimos!</p>
+                <h2>Degradé</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde numquam nisi, rerum debitis libero esse, illum molestiae asperiores nobis quod optio. Atque aperiam numquam mollitia iure molestias vitae quod dignissimos!</p>
+                <h2>Líneas</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde numquam nisi, rerum debitis libero esse, illum molestiae asperiores nobis quod optio. Atque aperiam numquam mollitia iure molestias vitae quod dignissimos!</p>
+            </section>
 
-        <section class="text-start">
-            <h2 class="h1 fw-bold">TATUAJES</h2>
-
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Estilo EEUU</button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>El tattoo tradicional se caracteriza por algunos detalles básicos: Lineas gruesas, firmes y sin modulación. Con colores primarios sólidos, rojos, amarillos, verdes, azules y mucho negro. Diseños simples o de gran abstracción que dentro de los mismos tienen una complejidad absoluta, de composición equilibrada y detallada pero no excesiva, no hay detalles realistas ya que siempre responde a las reglas básicas de luz y sombra.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Estilo Japonés</button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>El tatuaje japonés se caracteriza por un diseño fuerte y rudo aunque las figuras encierran un estilo grácil y delicado. Además, una de las señas de identidad es el horror vacui que cubre toda la piel. Las composiciones suelen estar formadas por una o varias figuras principales de mayor tamaño que ocupan los espacios centrales y para rellenar el espacio vacío se utilizan nubes, corrientes de agua, remolinos de viento, flores, pétalos, hojas de arce, etc.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>    
-
-        <section class="text-end">
-            <h2 class="h1 fw-bold">BARBER SHOP</h2>
-
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Cortes de pelo</button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde numquam nisi, rerum debitis libero esse, illum molestiae asperiores nobis quod optio. Atque aperiam numquam mollitia iure molestias vitae quod dignissimos!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Degradé</button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem explicabo, laborum accusantium dolorem quasi numquam nemo perspiciatis id sit voluptas dolores reprehenderit, quis quae error distinctio architecto iure. Voluptatum.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Líneas</button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem explicabo, laborum accusantium dolorem quasi numquam nemo perspiciatis id sit voluptas dolores reprehenderit, quis quae error distinctio architecto iure. Voluptatum.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="imgInicio1">
-            <img src="imagenes/img1.jpg" class="img-fluid" alt="Elementos de Barberia">
-        </section>
+            <section class="imgInicio1">
+                <img src="imagenes/img1.jpg" class="img-fluid" alt="Elementos de Barberia">
+            </section>
+        </div>
 
     </div>
 
