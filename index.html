@@ -26,90 +26,149 @@
 <body>
 
     <div id="inicio">
-        <header>
-            <!-- NAV -->
-            <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
-                <div class="container-fluid sub-nav">
-                  <a class="navbar-brand mobile" href="#"><img class="logo" src="imagenes/logo.png" alt="Logo Dicky Moe Estudio"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+            <div class="container-fluid sub-nav">
+
+                <a class="navbar-brand mobile" href="#"><img class="logo" src="imagenes/logo.png" alt="Logo Dicky Moe Estudio"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item mobile margin-top"><a class="nav-link" href="index.html">Inicio</a></li>
-                      <li class="nav-item margin-top">
-                        <a class="nav-link" href="paginas/barberia.html">Barbería</a>
-                      </li>
-                      <li class="nav-item margin-top">
-                        <a class="nav-link" href="paginas/tatuajes.html">Tatuajes</a>
-                      </li>
-                      <li class="nav-item ocultar">
-                        <a class="nav-link" href="index.html"><img class="logo" src="imagenes/logo.png" alt="Logo Dicky Moe"></a>
-                      </li>
-                      <li class="nav-item margin-top">
-                        <a class="nav-link" href="paginas/sobreMi.html">Sobre Mi</a>
-                      </li>
-                      <li class="nav-item margin-top">
-                        <a class="nav-link" href="paginas/contacto.html">Contacto</a>
-                      </li>
+                        <li class="nav-item mobile margin-top mx-1"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="paginas/barberia.html">Barbería</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="paginas/tatuajes.html">Tatuajes</a></li>
+                        <li class="nav-item ocultar-mobile mx-1"><a class="nav-link" href="index.html"><img class="logo" src="imagenes/logo.png" alt="Logo Dicky Moe"></a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="paginas/sobreMi.html">Sobre Mi</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="paginas/contacto.html">Contacto</a></li>
                     </ul>
-                  </div>
                 </div>
-            </nav>
-        </header>
-        <!-- HERO -->
-        <main class="hero d-flex flex-column justify-content-center align-items-center">
+                
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+        <header class="header d-flex flex-column justify-content-center align-items-center">
             <h1>Dicky Moe Estudio</h1>
             <h3>Tattoo & Barber Shop</h3>
-        </main>
-   </div>
+        </header>
+
+    </div>
 
    <!-- CONTENIDO -->
-    <div class="row row-cols-1 row-cols-md-2 seccion-inicio gy-5 container-fluid">
+    <div class="row row-cols-1 row-cols-md-2 gy-5 py-5 container-fluid">
+
         <section class="imgInicio2">
             <img src="imagenes/img2.jpg" class="img-fluid" alt="Maquina de Tatuajes">
         </section>
-        <section class="seccion tattoo">
-        <h2 class="h1">TATUAJES <small class="text-muted">tradicionales</small></h2>
-        <h4 class="h1">> Estadounidense</h4>
-        <h4 class="h1">> Japonés</h4>
+
+        <section class="text-start">
+            <h2 class="h1 fw-bold">TATUAJES</h2>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Estilo EEUU</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>El tattoo tradicional se caracteriza por algunos detalles básicos: Lineas gruesas, firmes y sin modulación. Con colores primarios sólidos, rojos, amarillos, verdes, azules y mucho negro. Diseños simples o de gran abstracción que dentro de los mismos tienen una complejidad absoluta, de composición equilibrada y detallada pero no excesiva, no hay detalles realistas ya que siempre responde a las reglas básicas de luz y sombra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Estilo Japonés</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>El tatuaje japonés se caracteriza por un diseño fuerte y rudo aunque las figuras encierran un estilo grácil y delicado. Además, una de las señas de identidad es el horror vacui que cubre toda la piel. Las composiciones suelen estar formadas por una o varias figuras principales de mayor tamaño que ocupan los espacios centrales y para rellenar el espacio vacío se utilizan nubes, corrientes de agua, remolinos de viento, flores, pétalos, hojas de arce, etc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+
+        <section class="text-end">
+            <h2 class="h1 fw-bold">BARBER SHOP</h2>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Cortes de pelo</button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde numquam nisi, rerum debitis libero esse, illum molestiae asperiores nobis quod optio. Atque aperiam numquam mollitia iure molestias vitae quod dignissimos!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Degradé</button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem explicabo, laborum accusantium dolorem quasi numquam nemo perspiciatis id sit voluptas dolores reprehenderit, quis quae error distinctio architecto iure. Voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Líneas</button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In quidem explicabo, laborum accusantium dolorem quasi numquam nemo perspiciatis id sit voluptas dolores reprehenderit, quis quae error distinctio architecto iure. Voluptatum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="seccion barber">
-        <h2 class="h1">BARBER SHOP</h2>
-        </section>
+
         <section class="imgInicio1">
             <img src="imagenes/img1.jpg" class="img-fluid" alt="Elementos de Barberia">
         </section>
+
     </div>
 
     <!-- FOOTER -->
-    <footer class="footer row row-cols-lg-4 row-cols-md-12 justify-content-around">
-        <section class="ubicacion">
+    <footer class="footer row row-cols-lg-4 row-cols-md-12 justify-content-around mx-0 py-5 bg-black">
+
+        <section class="text-center">
                 <h4>Ubicación</h4>
                 <hr>
                 <div>
-                    <p>Avenida 1 N° 1507</p><p class="margin-bottom">La Plata, Buenos Aires</p>
+                    <p>Avenida 1 N° 1507</p><p class="mb-2">La Plata, Buenos Aires</p>
                     <a href="https://www.google.com.ar/maps/place/Av.+1+1507,+B1906DMF+La+Plata,+Provincia+de+Buenos+Aires/@-34.9180269,-57.9341569,17z/data=!3m1!4b1!4m5!3m4!1s0x95a2e61bf2a8960d:0x2cb8d311a7d3ff8a!8m2!3d-34.9180313!4d-57.9319682" class="btn" target="_blank">Ver en mapa</a>
                </div>
         </section>
-        <section class="contacto">
+
+        <section class="contacto text-center">
                 <h4>Contacto</h4>
                 <hr>
                 <div>
-                    <ul>
-                        <li><img class="rrss" src="imagenes/instagram.png" alt="Instagram"><a href="https://www.instagram.com/dickymoe.tattoo/" target="_blank">@dickymoe.tattoo</a></li>
-                        <li><img class="rrss" src="imagenes/facebook.png" alt="Facebook"><a href="https://www.facebook.com/DICKY-MOE-Tattoo-100281285154558/" target="_blank">Dicky Moe Tattoo</a></li>
-                        <li><img class="rrss" src="imagenes/whatsapp.png" alt="WhatsApp"><a href="https://wa.me/+5492345453937" target="_blank">+54 9 2345 45-3937</a></li>
+                    <ul class="ps-0 text-center">
+                        <li><img class="rrss" src="imagenes/instagram.png" alt="Instagram"><a class="ms-2" href="https://www.instagram.com/dickymoe.tattoo/" target="_blank">@dickymoe.tattoo</a></li>
+                        <li><img class="rrss" src="imagenes/facebook.png" alt="Facebook"><a class="ms-3" href="https://www.facebook.com/DICKY-MOE-Tattoo-100281285154558/" target="_blank">Dicky Moe Tattoo</a></li>
+                        <li><img class="rrss" src="imagenes/whatsapp.png" alt="WhatsApp"><a class="ms-2" href="https://wa.me/+5492345453937" target="_blank">+54 9 2345 45-3937</a></li>
                     </ul>
                 </div>
         </section>
-        <section class="horarios">
+
+        <section class="text-center">
                 <h4>Horarios</h4>
                 <hr>
                 <div>
                     <p>Lunes a Sábados</p><p>de 10 a 18hs</p>
                 </div>
         </section>
+
     </footer>
 
     <!-- Script de Bootstrap -->

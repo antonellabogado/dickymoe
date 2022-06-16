@@ -26,91 +26,89 @@
 <body>
     
     <div id="secciones">
-        <header>
-            <!-- NAV -->
-            <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
-                <div class="container-fluid sub-nav">
-                  <a class="navbar-brand mobile" href="#"><img class="logo" src="../imagenes/logo.png" alt="Logo Dicky Moe Estudio"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                   <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- NAV -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+            <div class="container-fluid sub-nav">
+
+                <a class="navbar-brand mobile" href="#"><img class="logo" src="../imagenes/logo.png" alt="Logo Dicky Moe Estudio"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item mobile margin-top"><a class="nav-link" href="../index.html">Inicio</a></li>
-                      <li class="nav-item margin-top">
-                        <a class="nav-link" href="../paginas/barberia.html">Barbería</a>
-                      </li>
-                      <li class="nav-item margin-top">
-                        <a class="nav-link" href="../paginas/tatuajes.html">Tatuajes</a>
-                      </li>
-                      <li class="nav-item ocultar">
-                        <a class="nav-link" href="../index.html"><img class="logo" src="../imagenes/logo.png" alt="Logo Dicky Moe"></a>
-                      </li>
-                      <li class="nav-item margin-top">
-                        <a class="nav-link" href="../paginas/sobreMi.html">Sobre Mi</a>
-                      </li>
-                      <li class="nav-item margin-top">
-                        <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
-                      </li>
+                        <li class="nav-item mobile margin-top mx-1"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="../paginas/barberia.html">Barbería</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="../paginas/tatuajes.html">Tatuajes</a></li>
+                        <li class="nav-item ocultar-mobile mx-1"><a class="nav-link" href="../index.html"><img class="logo" src="../imagenes/logo.png" alt="Logo Dicky Moe"></a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="../paginas/sobreMi.html">Sobre Mi</a></li>
+                        <li class="nav-item margin-top mx-1"><a class="nav-link" href="../paginas/contacto.html">Contacto</a></li>
                     </ul>
-                  </div>
                 </div>
-            </nav>
-        </header>
-        <!-- HERO -->
-        <main class="hero d-flex flex-column justify-content-center align-items-center">
+
+            </div>
+        </nav>
+
+        <!-- HEADER -->
+        <header class="header d-flex flex-column justify-content-center align-items-center">
             <h1>Barbería</h1>
             <h3>Conocé todos mis trabajos</h3>
-        </main>
+        </header>
+        
    </div>
 
    <!-- CONTENIDO -->
-    <section class="galeria container">
-      <div class="row row-cols-lg-4 row-cols-md-6 row-cols-sm-12">
-        <div class="barberia-1"></div>
-        <div class="barberia-2"></div>
-        <div class="barberia-3"></div>
-        <div class="barberia-4"></div>
-        <div class="barberia-5"></div>
-        <div class="barberia-6"></div>
-        <div class="barberia-7"></div>
-        <div class="barberia-8"></div>
-        <div class="barberia-9"></div>
-        <div class="barberia-10"></div>
-        <div class="barberia-11"></div>
-        <div class="barberia-12"></div>
-      </div>
+    <section class="container py-5">
+        <div class="galeria row row-cols-lg-4 row-cols-md-6 row-cols-sm-12 justify-content-between">
+            <div class="barberia-1"></div>
+            <div class="barberia-2"></div>
+            <div class="barberia-3"></div>
+            <div class="barberia-4"></div>
+            <div class="barberia-5"></div>
+            <div class="barberia-6"></div>
+            <div class="barberia-7"></div>
+            <div class="barberia-8"></div>
+            <div class="barberia-9"></div>
+            <div class="barberia-10"></div>
+            <div class="barberia-11"></div>
+            <div class="barberia-12"></div>
+        </div>
     </section>
     
     <!-- FOOTER -->
-    <footer class="footer row row row-cols-lg-4 row-cols-md-12 justify-content-around">
-      <section class="ubicacion">
-              <h4>Ubicación</h4>
-              <hr>
-              <div>
-                <p>Avenida 1 N° 1507</p><p class="margin-bottom">La Plata, Buenos Aires</p>
+    <footer class="footer row row-cols-lg-4 row-cols-md-12 justify-content-around mx-0 py-5 bg-black">
+
+        <section class="text-center">
+            <h4>Ubicación</h4>
+            <hr>
+            <div>
+                <p>Avenida 1 N° 1507</p><p class="mb-2">La Plata, Buenos Aires</p>
                 <a href="https://www.google.com.ar/maps/place/Av.+1+1507,+B1906DMF+La+Plata,+Provincia+de+Buenos+Aires/@-34.9180269,-57.9341569,17z/data=!3m1!4b1!4m5!3m4!1s0x95a2e61bf2a8960d:0x2cb8d311a7d3ff8a!8m2!3d-34.9180313!4d-57.9319682" class="btn" target="_blank">Ver en mapa</a>
-             </div>
-      </section>
-      <section class="contacto">
-              <h4>Contacto</h4>
-              <hr>
-              <div>
-                <ul>
-                    <li><img class="rrss" src="../imagenes/instagram.png" alt="Instagram"><a href="https://www.instagram.com/dickymoe.tattoo/" target="_blank">@dickymoe.tattoo</a></li>
-                    <li><img class="rrss" src="../imagenes/facebook.png" alt="Facebook"><a href="https://www.facebook.com/DICKY-MOE-Tattoo-100281285154558/" target="_blank">Dicky Moe Tattoo</a></li>
-                    <li><img class="rrss" src="../imagenes/whatsapp.png" alt="WhatsApp"><a href="https://wa.me/+5492345453937" target="_blank">+54 9 2345 45-3937</a></li>
+            </div>
+        </section>
+
+        <section class="contacto text-center">
+            <h4>Contacto</h4>
+            <hr>
+            <div>
+                <ul class="ps-0 text-center">
+                    <li><img class="rrss" src="../imagenes/instagram.png" alt="Instagram"><a class="ms-2" href="https://www.instagram.com/dickymoe.tattoo/" target="_blank">@dickymoe.tattoo</a></li>
+                    <li><img class="rrss" src="../imagenes/facebook.png" alt="Facebook"><a class="ms-3" href="https://www.facebook.com/DICKY-MOE-Tattoo-100281285154558/" target="_blank">Dicky Moe Tattoo</a></li>
+                    <li><img class="rrss" src="../imagenes/whatsapp.png" alt="WhatsApp"><a class="ms-2" href="https://wa.me/+5492345453937" target="_blank">+54 9 2345 45-3937</a></li>
                 </ul>
-              </div>
-      </section>
-      <section class="horarios">
-              <h4>Horarios</h4>
-              <hr>
-              <div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <h4>Horarios</h4>
+            <hr>
+            <div>
                 <p>Lunes a Sábados</p><p>de 10 a 18hs</p>
-              </div>
-      </section>
-  </footer>
+            </div>
+        </section>
+
+    </footer>
 
     <!-- Script de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

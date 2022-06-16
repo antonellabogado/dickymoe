@@ -20,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 #inicio, #secciones {
     background-image: url(../imagenes/fondo.jpg);
     background-position: center;
@@ -47,7 +51,6 @@ a {
 
 .nav-link {
     font-size: 1.1rem;
-    margin: 0px 5px;
 }
 
 .nav-link:hover {
@@ -63,52 +66,28 @@ a {
     height: 25rem;
 }
 
-.hero {
+.header {
     height: calc(100% - 97px);
 }
 
-.hero h3 {
+.header h3 {
     color: rgb(99, 19, 102);
     animation: fadeInLeft;
     animation-duration: 2s;
 }
 
 /* Inicio */
-.seccion-inicio {
-    padding-top: 75px;
-    padding-bottom: 75px;
-}
-
-.seccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.tattoo {
-    align-items: flex-start;
-}
-
-.barber {
-    align-items: flex-end;
-}
-
 .h1 {
     font-size: 3rem;
-    font-weight: bolder;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(99, 19, 102);
+    background-color: #86868673;
 }
 
 /* Tatuajes y Barbería */
-.galeria, .seccion-sobreMi ,.seccion-contacto {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.galeria .row {
-    justify-content: space-between;
-}
-
-.galeria .row div {
+.galeria div {
     width: 350px;
     height: 350px;
     background-position: center;
@@ -116,7 +95,7 @@ a {
     margin-bottom: 30px;
 }
 
-.galeria .row div:hover {
+.galeria div:hover {
     border: 5px solid rgb(255, 255, 255);
 }
 
@@ -216,37 +195,14 @@ a {
     background-image: url(../imagenes/tattoo12.png);
 }
 
-/* Sobre Mí */
-.seccion-sobreMi {
-    justify-content: space-between;
-}
-
-.sobreMi p {
-    color: rgb(0, 0, 0);
-    font-size: 1.3rem;
-}
-
-.sombra {
-    box-shadow: 50px -40px 0px 0px rgb(99, 19, 102);
-}
-
-/* Contacto */
-.seccion-contacto {
-    text-align: center;
-}
-
-.seccion-contacto p {
+/* Sobre Mí y Contacto*/
+.sobreMi p, .seccion-contacto p {
     color: rgb(0, 0, 0);
     font-size: 1.3rem;
 }
 
 .form {
-    margin: 2rem;
     height: 450px;
-}
-
-input, select, textarea, button {
-    margin-bottom: 10px;
 }
 
 .form .btn {
@@ -254,20 +210,7 @@ input, select, textarea, button {
 }
 
 /* FOOTER */
-.footer {
-    background-color: rgb(0, 0, 0);
-    padding: 60px 0;
-}
-
-hr {
-    margin: 1rem 0;
-    color: inherit;
-    border: 0;
-    border-top: 1px solid;
-    opacity: .25;
-}
-
-.footer h4, .footer p, .contacto div ul li a {
+.footer, .footer .contacto a {
     color: rgb(255, 255, 255);
 }
 
@@ -277,14 +220,6 @@ hr {
 
 .footer p {
     margin: 0;
-}
-
-.ubicacion, .contacto, .horarios {
-    text-align: center;
-}
-
-.ubicacion .margin-bottom {
-    margin-bottom: 10px;
 }
 
 .btn {
@@ -298,17 +233,8 @@ hr {
     color: #fff;
 }
 
-.contacto div ul {
-    list-style: none;
-    text-align: justify;
-}
-
-.contacto div ul li {
-    margin-left: 30px;
-}
-
-.contacto div ul li a {
-    margin: 0 15px;
+.contacto div ul li a:hover {
+    color: rgb(99, 19, 102);
 }
 
 .rrss {
@@ -319,30 +245,22 @@ hr {
 @media (max-width: 1199.98px) {
 
     /* Tatuajes y Barbería */
-    .galeria .row {
-        justify-content: space-around;
-    }
-
-    /* Sobre Mí */
-    .seccion-sobreMi {
-        justify-content: center;
+    .galeria {
+        justify-content: space-evenly!important;
     }
 
     .sobreMi {
         margin-bottom: 80px;
     }
 
-    .imgSobreMi {
-        text-align: center;
+    /* Contacto */
+    iframe {
+        width: 100%;
     }
 
     /* FOOTER */
-    .ubicacion, .contacto, .horarios {
+    .footer section{
         margin-bottom: 50px;
-    }
-
-    .contacto div ul {
-        text-align: center;
     }
 
 }
@@ -357,15 +275,15 @@ hr {
     }
 
     .margin-top {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
-    .ocultar {
+    .ocultar-mobile {
         display: none;
     }
 
     /* Tatuajes y Barbería */
-    .galeria .row {
-        justify-content: center;
+    .galeria {
+        justify-content: center!important;
     }
 }
