@@ -1,10 +1,10 @@
 .sobreMi p, .seccion-contacto p {
     color: $negro;
-    font-size: 1.3rem;
+    font-size: map-get($font-sizes, medium);
 }
 
 .form {
-    height: 450px;
+    @include sizes(auto, 450px);
     .btn {
         border-color: $violeta;
     }

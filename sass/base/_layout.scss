@@ -1,21 +1,19 @@
 /* NAV */
-
 .navbar {
     background-color: transparent;
 .sub-nav{
-    width: auto;
+    @include sizes(auto, auto);
     .mobile {
         display: none;
     }
     .logo {
-        width: 100px;
-        height: auto;
+        @include sizes(100px, auto);
     }
     .margin-top {
         margin-top: 28px;
     }
     .nav-link {
-        font-size: 1.1rem;
+        font-size: map-get($font-sizes, small);
         &:hover {
             color: $violeta;
         }
@@ -25,14 +23,14 @@
 
 /* HEADER */
 .header {
-    height: 100%;
+    @include sizes(auto, 100%);
     padding-bottom: 100px;
     h1 {
         color: $blanco;
-        font-size: 4rem;
+        font-size: map-get($font-sizes, large);
         font-weight: bolder;
     }
-    h3 {
+    h2 {
         color: $violeta;
         animation: fadeInLeft;
         animation-duration: 2s;
@@ -43,8 +41,8 @@
 .footer {
     section {
         color: $blanco;
-        h4 {
-            font-size: 1.25rem;
+        h3 {
+            font-size: map-get($font-sizes, medium);
         }
         p {
             margin: 0;
@@ -58,7 +56,7 @@
             }
         }
         .rrss {
-            width: 25px;
+            @include sizes(25px, auto);
         }
     }
 

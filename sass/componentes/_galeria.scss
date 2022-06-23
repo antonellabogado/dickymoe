@@ -1,7 +1,6 @@
 .galeria {
     div {
-        width: 350px;
-        height: 350px;
+        @include sizes(350px, 350px);
         background-position: center;
         background-size: cover;
         &:hover {
@@ -11,99 +10,15 @@
 }
 
 /* Barbería */
-.barberia-1 {
-    background-image: url(../imagenes/barberia1.jpg);
-}
-
-.barberia-2 {
-    background-image: url(../imagenes/barberia2.jpg);
-}
-
-.barberia-3 {
-    background-image: url(../imagenes/barberia3.jpg);
-}
-
-.barberia-4 {
-    background-image: url(../imagenes/barberia4.jpg);
-}
-
-.barberia-5 {
-    background-image: url(../imagenes/barberia5.jpg);
-}
-
-.barberia-6 {
-    background-image: url(../imagenes/barberia6.jpg);
-}
-
-.barberia-7 {
-    background-image: url(../imagenes/barberia7.jpg);
-}
-
-.barberia-8{
-    background-image: url(../imagenes/barberia8.jpg);
-}
-
-.barberia-9 {
-    background-image: url(../imagenes/barberia9.jpg);
-}
-
-.barberia-10 {
-    background-image: url(../imagenes/barberia10.jpg);
-}
-
-.barberia-11 {
-    background-image: url(../imagenes/barberia11.jpg);
-}
-
-.barberia-12 {
-    background-image: url(../imagenes/barberia12.jpg);
+@for $i from 1 through 12 {
+    .barberia-#{$i} {
+        background-image: url(../imagenes/barberia#{$i}.jpg);
+    }
 }
 
 /* Tatuajes */
-.tatuajes-1 {
-    background-image: url(../imagenes/tattoo1.png);
-}
-
-.tatuajes-2 {
-    background-image: url(../imagenes/tattoo2.png);
-}
-
-.tatuajes-3 {
-    background-image: url(../imagenes/tattoo3.png);
-}
-
-.tatuajes-4 {
-    background-image: url(../imagenes/tattoo4.png);
-}
-
-.tatuajes-5 {
-    background-image: url(../imagenes/tattoo5.png);
-}
-
-.tatuajes-6 {
-    background-image: url(../imagenes/tattoo6.png);
-}
-
-.tatuajes-7 {
-    background-image: url(../imagenes/tattoo7.png);
-}
-
-.tatuajes-8 {
-    background-image: url(../imagenes/tattoo8.png);
-}
-
-.tatuajes-9 {
-    background-image: url(../imagenes/tattoo9.png);
-}
-
-.tatuajes-10 {
-    background-image: url(../imagenes/tattoo10.png);
-}
-
-.tatuajes-11 {
-    background-image: url(../imagenes/tattoo11.png);
-}
-
-.tatuajes-12 {
-    background-image: url(../imagenes/tattoo12.png);
+@for $e from 1 through 12 {
+    .tatuajes-#{$e} {
+        background-image: url(../imagenes/tattoo#{$e}.png);
+    }
 }

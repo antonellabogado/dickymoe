@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* MIXINS */ /* MAPS */
 * {
   margin: 0;
   padding: 0;
@@ -18,19 +19,18 @@ ul {
   list-style: none;
 }
 
-#inicio {
+.inicio, .secciones {
+  width: auto;
   height: 35rem;
-}
-
-#secciones {
-  height: 25rem;
-}
-
-#inicio, #secciones {
   background-image: url(../imagenes/fondo.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.secciones {
+  width: auto;
+  height: 25rem;
 }
 
 .btn {
@@ -49,6 +49,7 @@ ul {
 }
 .navbar .sub-nav {
   width: auto;
+  height: auto;
 }
 .navbar .sub-nav .mobile {
   display: none;
@@ -69,6 +70,7 @@ ul {
 
 /* HEADER */
 .header {
+  width: auto;
   height: 100%;
   padding-bottom: 100px;
 }
@@ -77,7 +79,7 @@ ul {
   font-size: 4rem;
   font-weight: bolder;
 }
-.header h3 {
+.header h2 {
   color: rgb(99, 19, 102);
   animation: fadeInLeft;
   animation-duration: 2s;
@@ -87,7 +89,7 @@ ul {
 .footer section {
   color: rgb(255, 255, 255);
 }
-.footer section h4 {
+.footer section h3 {
   font-size: 1.25rem;
 }
 .footer section p {
@@ -101,8 +103,56 @@ ul {
 }
 .footer ul .rrss {
   width: 25px;
+  height: auto;
 }
 
+@media (max-width: 1199.98px) {
+  /* Galería */
+  .galeria {
+    justify-content: space-evenly !important;
+  }
+  .sobreMi {
+    margin-bottom: 80px;
+  }
+  /* Contacto */
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  /* FOOTER */
+  .footer section {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+  }
+  .navbar .sub-nav {
+    width: 100%;
+    height: auto;
+  }
+  .navbar .sub-nav .mobile {
+    display: block;
+  }
+  .navbar .sub-nav .margin-top {
+    margin-top: 20px;
+  }
+  .navbar .sub-nav .ocultar-mobile {
+    display: none;
+  }
+  .header {
+    padding-top: 100px;
+  }
+  /* Galería */
+  .galeria {
+    justify-content: center !important;
+  }
+}
 .galeria div {
   width: 350px;
   height: 350px;
@@ -213,59 +263,15 @@ ul {
 
 .sobreMi p, .seccion-contacto p {
   color: rgb(0, 0, 0);
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .form {
+  width: auto;
   height: 450px;
 }
 .form .btn {
   border-color: rgb(99, 19, 102);
-}
-
-@media (max-width: 1199.98px) {
-  /* Galería */
-  .galeria {
-    justify-content: space-evenly !important;
-  }
-  .sobreMi {
-    margin-bottom: 80px;
-  }
-  /* Contacto */
-  iframe {
-    width: 100%;
-  }
-  /* FOOTER */
-  .footer section {
-    margin-bottom: 50px;
-  }
-}
-@media (max-width: 767.98px) {
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-  }
-  .navbar .sub-nav {
-    width: 100%;
-  }
-  .navbar .sub-nav .mobile {
-    display: block;
-  }
-  .navbar .sub-nav .margin-top {
-    margin-top: 20px;
-  }
-  .navbar .sub-nav .ocultar-mobile {
-    display: none;
-  }
-  .header {
-    padding-top: 100px;
-  }
-  /* Galería */
-  .galeria {
-    justify-content: center !important;
-  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

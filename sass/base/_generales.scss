@@ -17,19 +17,17 @@ ul {
     list-style: none;
 }
 
-#inicio {
-    height: 35rem;
-}
-
-#secciones {
-    height: 25rem;
-}
-
-#inicio, #secciones {
+.inicio {
+    @include sizes(auto, 35rem);
     background-image: url(../imagenes/fondo.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.secciones {
+    @extend .inicio;
+    @include sizes(auto, 25rem);
 }
 
 .btn {
