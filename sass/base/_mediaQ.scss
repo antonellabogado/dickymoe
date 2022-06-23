@@ -11,7 +11,7 @@
 
     /* Contacto */
     iframe {
-        @include sizes(100%, auto);
+        @include sizes(100%, 450px);
     }
 
     /* FOOTER */
@@ -45,6 +45,11 @@
 
     .header {
         padding-top: 100px;
+    }
+
+    /* Contacto */
+    iframe {
+        @include sizes(100%, 250px);
     }
 
     /* Galería */
