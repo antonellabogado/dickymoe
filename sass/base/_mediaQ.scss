@@ -1,3 +1,4 @@
+/* MEDIA QUERIES */
 @media (max-width: 1199.98px) {
 
     /* Galería */
@@ -8,7 +9,7 @@
     .sobreMi {
         margin-bottom: 80px;
     }
-
+    
     /* Contacto */
     iframe {
         @include sizes(100%, 450px);
@@ -23,7 +24,8 @@
 
 }
 @media (max-width: 767.98px) {
-
+    
+    /* NAV */
     .navbar {
         position: fixed;
         top: 0;
@@ -43,6 +45,7 @@
         }
     }
 
+    /* HEADER */
     .header {
         padding-top: 100px;
     }

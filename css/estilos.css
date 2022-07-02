@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* MIXINS */ /* MAPS */
+/* GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -106,6 +106,7 @@ ul {
   height: auto;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 1199.98px) {
   /* Galería */
   .galeria {
@@ -125,6 +126,7 @@ ul {
   }
 }
 @media (max-width: 767.98px) {
+  /* NAV */
   .navbar {
     position: fixed;
     top: 0;
@@ -145,6 +147,7 @@ ul {
   .navbar .sub-nav .ocultar-mobile {
     display: none;
   }
+  /* HEADER */
   .header {
     padding-top: 100px;
   }
@@ -158,6 +161,7 @@ ul {
     justify-content: center !important;
   }
 }
+/* Galerías */
 .galeria div {
   width: 350px;
   height: 350px;
@@ -266,6 +270,7 @@ ul {
   background-image: url(../imagenes/tattoo12.png);
 }
 
+/* Paginas */
 .sobreMi p, .seccion-contacto p {
   color: rgb(0, 0, 0);
   font-size: 1.25rem;
