@@ -1,4 +1,4 @@
 # dickymoe 
 Proyecto Desarrollo Web - Coderhouse
 
-https://dickymoeestudio.000webhostapp.com/
+https://dickymoeestudio.netlify.app/
